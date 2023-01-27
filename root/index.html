@@ -15,8 +15,12 @@
    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
  rel="stylesheet"> -->
+ <script src="https://kit.fontawesome.com/05207e4dad.js" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/05207e4dad.js" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/05207e4dad.js" crossorigin="anonymous"></script>
+
   <style>
-   *{
+    *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -127,7 +131,7 @@ nav ul li a:hover::after{
     height: 3px;
     left: 0;
     bottom: -8px;
-    background:#ff004f ;
+    background:#ff004f;
     position: absolute;
     transition: 0.5s;
 }
@@ -162,6 +166,60 @@ nav ul li a:hover::after{
     grid-gap: 40px;
     margin-top: 50px;
 }
+.services-list div{
+    background:#262626;
+    padding:40px;
+    font-size:13px;
+    font-weight:300;
+    border-radius:10px;
+    transition: background 0.5s, transform 0.5s;
+  
+}
+.services-list div i{
+    font-size:40px;
+    margin-bottom:30px;
+}
+.services-list div h2{
+    font-size:30px;
+    font-weight:500;
+    margin-bottom:15px;
+}
+.services-list div a{
+   text-decoration:none;
+   color:#fff;
+   font-size:12px;
+   margin-top:20px;
+   display:inline-block;
+}
+.services-list div:hover{
+   background:#ff004f;
+   transform:translateY(-10px);
+}   
+
+/*--------------------portfolio-----------------*/
+
+#porfolio{
+  padding:50px;
+  
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+
   </style>
 </head>
 <body class="main-content">
@@ -245,6 +303,7 @@ nav ul li a:hover::after{
       <h1 class="sub-title">My Services</h1>
       <div class="services-list">
         <div>
+          <i class="fa-solid fa-code"></i>
           <h2>Web Design</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
              Natus obcaecati animi architecto perspiciatis rerum eos 
@@ -252,15 +311,9 @@ nav ul li a:hover::after{
             praesentium alias! Obcaecati praesentium omnis in.</p>
             <a href="">Learn more</a>
         </div>
+      
         <div>
-          <h2>Digital Marketing</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-             Natus obcaecati animi architecto perspiciatis rerum eos 
-             inventore nisi voluptates possimus ab consequatur nostrum et velit, 
-            praesentium alias! Obcaecati praesentium omnis in.</p>
-            <a href="">Learn more</a>
-        </div>
-        <div>
+          <i class="fas fa-crop"></i>
           <h2>UI/UX</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
              Natus obcaecati animi architecto perspiciatis rerum eos 
@@ -269,7 +322,17 @@ nav ul li a:hover::after{
             <a href="">Learn more</a>
         </div>
         <div>
+          <i class="fa-brands fa-app-store-ios"></i>
           <h2>App Development</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Natus obcaecati animi architecto perspiciatis rerum eos 
+             inventore nisi voluptates possimus ab consequatur nostrum et velit, 
+            praesentium alias! Obcaecati praesentium omnis in.</p>
+            <a href="">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-shop"></i>
+          <h2>Digital Marketing</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
              Natus obcaecati animi architecto perspiciatis rerum eos 
              inventore nisi voluptates possimus ab consequatur nostrum et velit, 
@@ -279,6 +342,30 @@ nav ul li a:hover::after{
       </div>
     </div>
   </div>
+    
+
+  <!-----------portfolio------------>
+
+  <div id="porfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="app.jpg">
+        </div>
+
+        <div class="work">
+          <img src="holi.jpg">
+        </div>
+
+        <div class="work">
+          <img src="mobile.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
 
 <script>
   var tablinks = document.getElementsByClassName("tab-links");
