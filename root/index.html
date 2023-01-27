@@ -217,8 +217,102 @@ nav ul li a:hover::after{
   width: 100%;
   border-radius: 10px;
   display: block;
+  transition: transform 0.5s;
+}
+.layer{
+  width: 100%;
+  height:0;
+  background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+  border-radius:10px;
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display:flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align:center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.layer h3{
+  font-size: 300;
+  margin-bottom: 20px;
+}
+.layer a{
+  margin-top: 20px;
+  color:#910431;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 50%;
+}
+.work:hover img{
+  transform:scale(1.1);         
+
+}
+.work:hover .layer{
+  height: 100%;
+}
+.btn{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding:14px 50px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.5s;
+
+}
+.btn:hover{
+  background:#ff004f;
 }
 
+/*-----------------contact-----------*/
+.contact-left{
+  flex-basis: 35%;
+
+}
+.contact-right{
+  flex-basis:60%;
+}
+.contact-left p{
+  margin-top: 30px;
+  font-size:25px;
+}
+.contact-left p i{
+  color:#ff004f;
+  margin-right:15px;
+  font-size:25px;
+}
+.social-icons {
+  margin-top: 30px;
+}
+.social-icons a{
+  text-decoration: none;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  font-size: 30px;
+  transition: transform 0.5s;
+}
+.social-icons a:hover{
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+.btn.btn2{
+  display: inline-block;
+  background:#ff004f;
+}
 
   </style>
 </head>
@@ -351,15 +445,66 @@ nav ul li a:hover::after{
       <h1 class="sub-title">My Work</h1>
       <div class="work-list">
         <div class="work">
+          <img src="iphone.jpg">
+          <div class="layer">
+            <h3>Bus Station app</h3>
+            <p>The app books you ticket from many bus stations in 
+              Cameroon and helps you send and recieve goods and across the
+               country download it from <b>play store</b> </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
           <img src="app.jpg">
+          <div class="layer">
+            <h3>Blaise Tech Pro</h3>
+            <p>This is an technology company that provides online services 
+              from consultation to web/app development</p>
+              <a href="https://blaisetechpro.com" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
         </div>
 
         <div class="work">
-          <img src="holi.jpg">
+          <img src="main.jpg">
+          <div class="layer">
+            <h3>Bus Station app</h3>
+            <p>The app books you ticket from many bus stations in 
+              Cameroon and helps you send and recieve goods and across the country </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
         </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
 
-        <div class="work">
-          <img src="mobile.jpg">
+  <!------------------contact--------------->
+
+  <div class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p> <i class="fa-solid fa-paper-plane"></i>&nbsp; ngwablessekeune@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> &nbsp; 672595146</p>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="flutter.pdf" download class="btn btn2">Download CV</a>
+        </div>
+       
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter your email " required>
+            <textarea name="meassage" placeholder="Your message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
         </div>
       </div>
     </div>
