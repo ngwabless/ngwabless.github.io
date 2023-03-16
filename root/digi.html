@@ -3,11 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Digital marketing is the promotion of brands and services 
+    on the internet to increase brand awareness and obtain potential customers.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing</title>
+    <meta name="author" content="Quibi">
+    <title>What is Digital Marketing</title>
     <link href="./index.scss" rel="stylesheet" type="text/css">
+    <style>
+        *{
+            box-sizing: border-box;
+            padding:0;
+            margin:0;
+        }
+        body{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            height:200vh;
+            display:grid;
+            grid-template-areas:
+            'header header header'
+            'article content content'
+            'article content content'
+            ;
+            grid-template-columns: 1fr 5fr 1fr;
+            grid-template-rows: 80px 1fr 70px;
+        }
+        .digi{
+            
+            color:#fff;
+            border: skyblue 1px solid;
+
+        }
+        .article{
+            grid-area: article;
+        }
+        main{
+            grid-area: content;
+        }
+        nav {
+            grid-area: header;
+           
+        }
+        
+        #sidemenu{
+            text-align:center;
+        }
+        .image{
+            
+            width:995px;
+            height:500px;
+            margin:0 0 0 80px;
+
+        }
+        .p1{
+            margin:0 90px 0 100px;
+        }
+
+        /*-----------------------scrollable columns------------*/
+          #left{
+            float: left;
+            overflow: auto;
+            box-sizing: border-box;
+            padding: 0.5em;
+            overflow: scroll;
+            position: -webkit-sticky;
+            position: sticky;
+            
+            }
+            
+
+    </style>
 </head>
 <body>
+    
+     
+    <nav>
+        <img src="Quibi(1).png" alt="Quibi Corp" class="logo">
+        <ul id="sidemenu">
+          <li><a href="https://ngwabless.github.io/root">Home</a></li>
+          <li><a href="https://ngwabless.github.io/root/#porfolio">Portfolio</a></li>
+          <li><a href="https://ngwabless.github.io/root/#contact">Contacts</a></li>
+          <li><a href="https://ngwabless.github.io/root/#services">Services</a></li>
+          <li><a href="https://ngwabless.github.io/root/#about">About</a></li>
+          <li><a href="https://ngwabless.github.io/root/#blogs">Blogs</a></li>
+          <i class="fas fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      
+         <main class="digi" id="right">
+        <br><br>
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What is Digital Marketing</h1>
+        <br>
+        <div > <img class="image" src="student.jpg" alt="digital marketing photo"></div>
+            <br><br>
+       
+        <p class="p1">Digital marketing also known as online marketing is a type of marketing that promotes products 
+            and services through the Internet and online-based digital 
+            technologies such as desktop computers,
+             mobile phones, and other digital media and platforms.</p>
+      </main>
+    
+      <div class="digi article" id="left"><br><br>In this article</div>
+
+    
+
+      
+
     
 </body>
 </html>
